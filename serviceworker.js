@@ -1,4 +1,5 @@
-let cacheName = "cache_v1"
+let cacheName = "cache_v1";
+let url ="https://aravindvattappallil.github.io/Lab2"
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
@@ -15,14 +16,14 @@ self.addEventListener('install',(   )=>{
     self.skipWaiting();
     caches.open(cacheName).then((cache)=>{
         return cache.addAll([
-            '/',
-            '/index.html',
-            '/manifest.json',
-            '/script.js',
-            '/icon/icon.png',
-            '/css/style.css',
-            '/favicon_package/android-chrome-192x192.png',
-            '/favicon_package/android-chrome-512x512.png'
+            `${url}`,
+            `${url}/index.html`,
+            `${url}/manifest.json`,
+            `${url}/script.js`,
+            `${url}/icon/icon.png`,
+            `${url}/css/style.css`,
+            `${url}/favicon_package/android-chrome-192x192.png`,
+            `${url}/favicon_package/android-chrome-512x512.png`
 
         ]);
     }).catch((error)=>{
