@@ -1,6 +1,7 @@
 let cacheName = "cache_v1";
 let url ="https://aravindvattappallil.github.io/Lab2"
 
+//network with cash fallback
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         fetch(event.request)
