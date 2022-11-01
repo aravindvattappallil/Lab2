@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Document</title>
 </head>
-<body>
+<body >
     <div class="logo">
         <div><img src="./icon/icon.png" alt="logo" width="50px"></div>
         <div><h1>Music</h1></div>
@@ -28,12 +28,12 @@
                 <h3>New Song</h3>
                 <div class="form_div">
 
-                <form >
+                <form id="musiclistform">
                     <label for="title">Title:</label><br>
                     <input type="text" id="title" name="title" placeholder="Enter Title" required><br>
                     <label for="artist">Artist:</label><br>
                     <input type="text" id="artist" name="artist" placeholder="Enter Artist" required><br><br>
-                    <button type="button" id="btn" onclick="add()">add</button>
+                    <button type="button" id="btn" >add</button>
                 </form> 
             </div>
             </div>
@@ -52,8 +52,9 @@
 
     </section>
 </section>
-<script src="./script.js"></script>
-    
+<!-- <script src="./musicdb.js"> </script> -->
+<script src="./script.js" type="module"></script>
+
     
 </body>
 </html>
